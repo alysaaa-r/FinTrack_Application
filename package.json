@@ -7,18 +7,37 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test-atlas": "node scripts/testAtlasIntegration.js",
+    "test-atlas-prod": "node scripts/testAtlasIntegration.js --production",
+    "quick-test": "node scripts/quickTest.js"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-firebase/app": "^23.5.0",
+    "@react-native-firebase/auth": "^23.5.0",
+    "@react-native-firebase/firestore": "^23.5.0",
+    "@react-navigation/bottom-tabs": "^7.4.9",
+    "@react-navigation/native": "^7.1.18",
+    "@react-navigation/native-stack": "^7.3.28",
     "@react-navigation/stack": "^7.4.10",
-    "expo": "~54.0.13",
+    "axios": "^1.13.2",
+    "expo": "^54.0.23",
+    "expo-image-picker": "^17.0.8",
+    "expo-linear-gradient": "~15.0.7",
     "expo-status-bar": "~3.0.8",
+    "firebase": "^12.6.0",
+    "firebase-admin": "^13.6.0",
+    "mongodb": "^7.0.0",
     "react": "19.1.0",
-    "react-native": "0.81.4"
+    "react-native": "^0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0"
   },
   "private": true,
   "devDependencies": {
     "@types/react": "~19.1.10",
+    "@types/react-native": "^0.72.8",
     "typescript": "~5.9.2"
   }
 }

@@ -39,3 +39,6 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Backend service account key (do not commit)
+backend/serviceAccountKey.json

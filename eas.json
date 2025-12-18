@@ -1,0 +1,36 @@
+{
+  "cli": {
+    "version": ">= 16.27.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk" 
+      },
+      "env": {
+        "API_KEY": "AIzaSyBqO7uTl6JwZbb0UpmnhNlnWTMA6DvieWg",
+        "AUTH_DOMAIN": "fintrack-d6f85.firebaseapp.com",
+        "PROJECT_ID": "fintrack-d6f85",
+        "STORAGE_BUCKET": "fintrack-d6f85.firebasestorage.app",
+        "MESSAGING_SENDER_ID": "697461615478",
+        "APP_ID": "1:697461615478:web:0af84eac9d1fd06b186857",
+        "MEASUREMENT_ID": "G-CD8N08QMR7"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
